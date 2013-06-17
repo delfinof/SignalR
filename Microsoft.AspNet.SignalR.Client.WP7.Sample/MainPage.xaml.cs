@@ -24,7 +24,7 @@ namespace Microsoft.AspNet.SignalR.Client.WP7.Sample
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            var connection = new Connection("http://192.168.2.235:40477/raw-connection");
+            var connection = new Connection("http://mxm-signalr.azurewebsites.net/raw-connection");
 
             connection.Received += data => Report(data);
 
